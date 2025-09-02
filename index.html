@@ -2,6 +2,99 @@
 <html lang="en">
 <head>
     <title>CSS Practice #3</title>
+    <style>
+        .footballers {
+            list-style-image: url(./assets/images/Soccer-icon.png);
+        }
+
+        li.cricketers{
+            background-color: red;
+            padding: 5px;      
+
+        }
+
+        ol:hover{
+            color: green;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color:green;
+        }
+
+        a:hover{
+            color:brown;
+        }
+
+        a:active {
+            color:purple;
+        }
+
+        nav {
+            background-color: yellow;
+            transition: background-color 0.3s ease;
+        }
+
+        nav:hover{
+            background-color: pink;
+        }
+
+        table, th, td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+
+        }
+
+        tr:nth-child(even) {
+            background-color:blue;
+        }
+
+        th {
+            text-transform: bold;
+            background-color: green;
+        }
+
+         .fifa2014{
+            float: right;
+        }
+
+        .first{
+            float: left;
+            border-color: red;
+        }
+
+        .second{
+            float: right;
+            border-color:blue;
+        }
+
+        li.secondnav{
+            display:inline;
+        }
+
+        ul.secondnav{
+            display:inline;
+        }
+
+        .secondnav{
+            position:fixed;
+
+        }
+
+        .drogba {
+            border-radius: 50%;
+        }
+
+        .lampard {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
 </head>
 <body>
     <h1> My Hobbies</h1>
@@ -11,6 +104,98 @@
         <li>Watching Movies</li>
     </ul>
 
+    <div style="background-color: red;">
+  
+    <h1>Favorite Cricketers</h1>
+    <ol class="cricketers" style="list-style-type: upper-roman;">
+        <li>Mike Hussey</li>
+        <li>Shoaib Akhtar</li>
+        <li>Younus Khan</li>
+    </ol>
+
+     </div>
+
+    <h1>Favorite Soccer Players</h1>
+    <ul class="footballers">
+        <li>Didier Drogba</li>
+        <li>Cristiano Ronaldo</li>
+        <li>Lionel Messi</li>
+    </ul>
+
+    <a style="text-decoration: none;" href="https://www.cricinfo.com">Cricinfo</a>
+
+    <nav style="padding: 3px;">
+        <a href="#">BBC</a>
+        <a href="#">Cricinfo</a>
+        <a href="#">Google</a>
+    </nav>
+
+    <table style="text-align: center;" >
+        <tr>
+        <th>Team</th>
+        <th>Games Played</th>
+        <th>Wins</th>
+        <th>Defeats</th>
+        <th>Draws</th>
+        <th>Points</th>
+        </tr>
+
+        <tr>
+        <td>Brazil</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>9</td>
+        </tr>
+
+        <tr>   
+        <td>Croatia</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+        </tr>
+
+
+    </table>
+
+              <img class="fifa2014" src="./assets/images/fifawc2014.jfif">
+
+        <p>The FIFA World Cup 2014 was held in Brazil from June 12 to July 13, bringing together 32 national teams from around the world. It was a tournament filled with excitement, drama, and unforgettable moments. One of the most shocking events was Brazil's 7-1 loss to Germany in the semifinals, one of the most lopsided defeats in World Cup history. Germany went on to win the tournament, defeating Argentina 1-0 in the final with a late goal in extra time by Mario Götze. The tournament was praised for its passionate fans, thrilling matches, and high-scoring games, making it one of the most memorable World Cups to date.
+</p>
+
+<div class="first">
+
+</div>
+
+<div class="second" >
+
+</div>
+
+<nav class="secondnav">
+    <ul>
+        <li>Muzammil</li>
+        <li>Usama</li>
+        <li>Ali</li>
+    </ul>
+</nav>
+
+<img class="drogba" src="./assets/images/drogba.webp"> <br>
+
+<img class="lampard" src="./assets/images/lampard.jfif"> <br>
+
+<form style="border: 2px solid red; padding: 5px; background-color: blue;">
+    <label for="fname">First Name</label>
+    <input type="text" name="fname"> <br>
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname"> <br>
+    <label for="email">Email</label>
+    <input type="email"> <br>
+    <input type="button" value="submit">
+
+</form>
 </body>
 
 </html>
